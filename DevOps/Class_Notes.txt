@@ -55,32 +55,43 @@ Lab Requirements :::
 	
 	Pre-requisites :
 
-	- Create GitHub Account 
-		https://github.com/
-	
-		- Active Email_ID
+		- Create GitHub Account 
+			https://github.com/
 		
-	
-	- AWS Cloud Platform:
-	
-		- Create Free Tier Account - Valid for 12 Months
+			- Active Email_ID		
 		
-			- Active Email_ID, Mobile_Number, Credit/Debit Card(Enabled with International Transaction)
+		- AWS Cloud Platform:
 		
-	
-	- Create DockerHub Account: 
+			https://aws.amazon.com/console/
+			
+			- Create Free Tier Account - Valid for 12 Months
+				https://aws.amazon.com/resources/create-account/
+			
+				- Active Email_ID
+				- Active Mobile_Number
+				- Active Credit/Debit Card(Enabled with International Transaction)
 		
-		- Active Email_ID
-		
+		- Create DockerHub Account: 
+			https://hub.docker.com/
+			
+			- Active Email_ID		
 
-
+		- Install Visual Studio Code IDE on Local Machine:
+			https://code.visualstudio.com/download
+			
+	
 	Later: 
 		- Install Some Tools on Local Machine :
 		
 			- Git client 
 			
-			- Visual Studio Code 
-			
 			- Python 
 			
 			- Terraform 
+			
+			
+Q&A :
+
+Next :
+
+	DevOps 

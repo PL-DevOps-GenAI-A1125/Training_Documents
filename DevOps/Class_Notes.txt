@@ -95,3 +95,264 @@ Q&A :
 Next :
 
 	DevOps 
+
+
+######################
+Day 3: 27th Nov. 2025
+######################
+
+	Introduction to DevOps :::
+	
+	What is DevOps ?
+	
+	
+	IT Service: 
+	
+	Software Applications :::
+	
+		- Web Applications
+		
+		- Desktops Applications
+		
+		- Mobile Applications
+	
+		- Embedded Applications 
+	
+	
+	
+	Software Development Life Cycle :
+	
+		- Requirement Analysis 
+		
+		- Design & Documentation 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implemented to Production 
+		
+		- Monitor & Maintain
+	
+				
+	Waterfall Model: 
+	
+		- Linear in fashion
+		- It strictly follows top-down approach
+		- It is meant only for Monolith Application Architecture
+		
+
+				- Desktops Applications ::
+					
+					- Super Market Billing Management :
+					
+						-> Functions 
+						
+							-> Inventory Management 
+							-> User Interface Design 
+							-> User Profile Management
+							-> Billing Management 
+							-> Payment Management	
+								- CASH Payment 
+								- Card Payment 
+									- Online Payment 
+									- UPI Payment
+		
+		
+	Main_Project:
+	
+		- Requirement Analysis 		--> 12 Months 
+		
+		- Design & Documentation 
+		
+		- Code & Development 			5 Month
+		
+		- Testing 
+		
+		- Implemented to Production 
+		
+		- Monitor & Maintain			
+		
+		
+	Enhancement_Project:
+	
+		- Requirement Analysis 		--> 4 Months 
+		
+		- Design & Documentation 
+		
+		- Code & Development 			
+		
+		- Testing 
+		
+		- Implemented to Production 
+		
+		- Monitor & Maintain
+	
+	
+	
+	
+	AGILE Methodology ::::
+
+				- Desktops Applications ::
+					
+					- Super Market Billing Management :
+					
+						-> Functions/Iterations/Modules
+						
+							-> Inventory Management 
+							-> User Interface Design 
+							-> User Profile Management
+							-> Billing Management 
+							-> Payment Management	
+								- CASH Payment 
+								- Card Payment 	
+	
+	Iteration 1: Inventory Management
+
+		- Requirement Analysis 
+		
+		- Design & Documentation 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implemented to Production with proper approval
+		
+		- Monitor & Maintain	
+	
+	
+	Iteration 2: User Interface Design 
+
+		- Requirement Analysis 
+		
+		- Design & Documentation 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implemented to Production with proper approval
+		
+		- Monitor & Maintain	
+	
+
+	Iteration 3: User Profile Management 
+
+		- Requirement Analysis 
+		
+		- Design & Documentation 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implemented to Production with proper approval
+		
+		- Monitor & Maintain
+		
+
+	Iteration nth : Online Payment
+
+		- Requirement Analysis 
+		
+		- Design & Documentation 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implemented to Production with proper approval
+		
+		- Monitor & Maintain
+		
+	
+	Using AGILE Methodologies:
+	
+		- We can achieve:
+		
+			- Continuous Development
+			
+			- Continuous Integration 
+			
+			- Continuous Testing 
+			
+			- Continuous Delivery 
+			
+				- It expect Manual Approval to release the changes to Production Environment.
+			
+			
+		- We cannot achieve: 
+		
+			- Continuous Deployment 
+				
+				- It Never expect any Manual Approval to release the changes to Production Environment.
+			
+			
+				
+	- DevOps ::::
+	
+		DevOps is Software Development Strategy, which promote Collaboration between the Teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Deployment and Continuous Monitoring in more automated fashion.
+		
+	
+	How to Implement DevOps ?
+	
+		- Identify the Teams involved in overall SDLC Process :
+		
+			- DevOps Team 
+				- Infra-Structure Management Team 
+				- Application Development Team 
+				- Testing Team 						50 Test Servers - 			
+				- Release Management Team 
+				- Production Support Team 
+				- Production Monitoring Team 
+				- IT Security Team 
+				
+		
+		- Environments :
+		
+			Non-Prod Environments 											Production Environments			
+			
+				- Dev Environment
+				
+				- Test Environments 
+				
+					- QA Environment 
+						Quality Assurance
+					
+					- UAT Environment		======================>				Production Servers (LIVE Environment)
+						User Acceptance Testing 
+					
+					Eg.: 
+					Telecomm Services :
+					
+						- New Offer 
+						
+						- Walk-in to nearest outlet 
+						
+						
+		- Application Architecture :
+		
+			- Monolith Application Architecture
+				- These are Tightly-Coupled Application Architecture
+				- All the dependencies and functions are tighly coupled.
+				- We cannot achieve Continuous Deployment. Only Continuous Delivery is possible.
+			
+			
+			- Micro-Service Based Application Architecture
+				- These are loosely Coupled Application Architecture
+				- Each and every function is considered as a Micro-Service
+				- Each Micro-Service will be independently Developed and Deployed to Production
+				- Using Micro-Service Application Architecture only we can achieve Continuous Deployment.
+			
+
+Next :
+	
+	- DevOps Stages:
+
+		- Continuous Development
+		- Continuous Integration
+		- Continuous Testing
+		- Continuous Delivery & Deployment
+		- Continuous Monitoring
+		

@@ -1,1 +1,165 @@
-Git Module ::::
+
+
+######################
+Day 8: 12th Dec. 2025
+######################	
+
+Version Control System using GIT ::::
+
+
+	Version Control System :::
+	
+		- It is used to version control the code changes.
+		
+		- It is used to Track the Changes.
+		
+		
+index.html :
+
+<html>
+adfa
+sdf
+asdfasdfasdfasd
+fashiondf
+asdfasdfasdfasdfasdf
+adsf
+</html>
+
+save index.html 			Test the Changes 
+
+<html>
+adfaasdfasdf
+sdfasdfsdfsdf
+asdfasdfasdfasdasdfasd
+fashiondfasdfasd
+asdfasdfasdfasdfasdf
+adsfasdfasd
+sdfgsdgsdfg
+</html>
+
+save index.html 			Test the Changes 
+
+	Use Version Control System :::
+
+index.html
+
+<html>
+adfa
+sdf
+asdfasdfasdfasd
+fashiondf
+asdfasdfasdfasdfasdf
+adsf
+</html>
+
+
+save using VCS: index.html				index.html_v1.0			# V1.0 ==> Version_Number/Tag/Commit_ID
+
+<html>
+adfa
+sdf
+asdfasdfasdfasd
+fashiondf
+asdfasdfasdfasdfasdf
+adsfasdfasd
+afsd
+asdfasdfasdfasdasdfasddf
+sd 
+asd
+</html>
+
+save using VCS: index.html				index.html_v1.1
+save using VCS: index.html				index.html_v1.2
+save using VCS: index.html				index.html_v1.3
+save using VCS: index.html				index.html_v1.4
+save using VCS: index.html				index.html_v1.5
+save using VCS: index.html				index.html_v1.6
+
+
+Types of VCS ::::
+
+	- Local VCS 
+	
+	- Centralized VCS 
+	
+	- Distributed VCS 
+	
+	
+	- GIT :
+			
+		- GIT is an Open-Source Distributed VCS 
+		- It is used to Version Control the Changes 
+		- It is used to Track the Changes 
+		- It is used to perform Parallel Development - using Branching Technques.
+		
+	- Working with GIT :::
+	
+	
+	- Git File Workflow ::: 
+	
+	Local Machine:																					Remote Server
+	
+	Install git client:																				github/Azure Repo/gitlab
+	
+	Working Directory				Staging/Index_Area 					Local Repository				Remote Repository
+	
+		index.html   --------------> index.html		   --------------->  index.html_v1.1 --------------->  index.html_v1.1
+						git add 						  git commit 						git push
+						
+		index.html   --------------> index.html		   --------------->  index.html_v1.2 --------------->  index.html_v1.2
+						git add 						  git commit 						git push
+	
+		index.html   --------------> index.html		   --------------->  index.html_v1.3 --------------->  index.html_v1.3
+						git add 						  git commit 						git push
+
+		index.html   --------------> index.html		   --------------->  index.html_v1.4 --------------->  index.html_v1.4
+						git add 						  git commit 						git push
+
+		index.html   --------------> index.html		   --------------->  index.html_v1.5 --------------->  index.html_v1.5
+						git add 						  git commit 						git push
+
+
+	Developers' Workload :::
+	
+	- Enhancement_Project / Bug-fix 
+	
+	- New Project
+	
+
+	git cli Commands ::
+	
+		- git clone 					# To Clone/Copy the entire Remote Repository to the Local Machine 
+		
+		- git add 						# To Add the Changes from Working Directory to Staging Area 
+		
+		- git commit 					# To Commit the Changes from Staging Area to Local Repository
+		
+		- git push						# To Push the Changes from Local Repository to Remote Repository
+		
+		- Git Fetch/Git Pull::: 
+		
+			- Both Git Fetch and Git Pull are used to handle the incremental changes from Remote Repository
+			
+			Git Fetch :	
+				
+					- Is used to just check for incremental changes in the Remote Repository, if incremental changes exist, it will update the details only in the Local Repository. Not in the Working Directory. 
+					- To bring the incremental changes to working directory, we can use git merge/git pull 
+					
+			Git Pull :	
+				
+					- Is will check for incremental changes in the Remote Repository, if incremental changes exist, it will update the details only in the Local Repository as well the Working Directory.
+					
+					git pull = git fetch + git merge 
+					
+					- As a best practise, it is always recommended to use git pull to keep the local repository in-sync with remote repository.
+					
+		- git init 						# To Initial a Local Repository
+										# It will create .git - GIT Directory 
+										# It create default branch called main/master 
+										
+										
+		GitHub Fork						# TO Copy the entire Remote Repository to Another Remote Repository 
+		
+		
+	
+	Working with Git Repo :

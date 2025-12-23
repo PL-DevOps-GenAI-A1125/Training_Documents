@@ -43,3 +43,13 @@ Build Orchestration using Jenkins ::::
 				Jenkins_SlaveNode3 (VM)	==> Perform Application Builds - Python Applications 
 				Jenkins_SlaveNode4 (VM)	==> Perform Application Builds - Angular/NodeJS
 				Jenkins_SlaveNode5 (VM)	==> Perform Application Builds - Ruby 	
+
+
+
+	- Need to Set-up the Build Environment for Java Maven Applications :::
+	
+		1. Create a Linux Script to Set-up the Build Environment for Java Maven Applications
+		
+		2. Create Linux User with ssh keys to perform Application Builds 
+		
+		3. Perform regular clean-up of the workspace dir 

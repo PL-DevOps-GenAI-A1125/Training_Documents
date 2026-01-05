@@ -1,0 +1,206 @@
+######################
+Day 18: 2nd Jan. 2026
+######################	
+		
+	Containerization using Docker ::::
+	
+		- What is Containerization?
+		
+			- It is a process of packaging the applications along with its dependencies.		
+		
+		DevOps - Micro-Services are deployed with Containers/Kubernetes		
+	
+	Virtual Machines :::
+	
+		- VMs are called as Hardware Level Virtualization 
+		- VMs are created using Hypervisor
+		- VMs are used to excute Operating Systems, by default.
+		- VMs can run even if there is no active task/application
+		- VMs consume more time and space to start-up the application
+		
+		
+Next :::
+	
+	Containers :::
+		
+	Docker 
+
+######################
+Day 19: 5th Jan. 2026
+######################		
+		
+	
+	Containerization using Docker ::::		
+		
+		
+		- It is a process of packaging the applications along with its dependencies.			
+		
+		
+	Virtual Machines :::
+	
+		- VMs are called as Hardware Level Virtualization 
+		- VMs are created using Hypervisor
+		- VMs are used to excute Operating Systems, by default.
+		- VMs can run even if there is no active task/application
+		- VMs consume more time and space to start-up the application
+
+	Containers :::
+	
+		- Containers are called as OS Level Virtualization 
+		- Containers are created using Container-Engine(Docker)
+		- Containers are used to excute the Tasks/Applications. Not Operating System, by default.
+		- Containers will immediately goes to EXIT state, if there is no active task/application.
+		- Containers consume less time and space to start-up the task/application.	
+		- Containers run in its own dedicated/Isolated Address Space.
+		- Containers uses the properties of the Underlying OS.
+			- Namespace & Control Groups ==> Kernel Properties 
+		- Containers can be used to reduce the no.of VMs. But we cannot completely eliminate the VMs.			
+	
+	Terminologies :::
+	
+		- Containerization 		#	It is a process of packaging the applications along with its dependencies.
+		
+		- Container-Engine		# 	It is used to Create and Manage the Containers and Container Images.
+		
+		- Container Images 		# 	It is a static file, defines the properties and depedencies of the Application/Container.
+									It is Non-Executable
+									It composed of various layer of Instructions created using Dockerfile.
+									
+		- Containers 			# 	Executable entity of the Container-Image
+
+		- Container Registry	# 	It is used to Store and Manage the versions of Container-Images 
+									Eg.: DockerHub 
+									https://hub.docker.com/
+									
+		- Container Repository	#	It is a subset of Container Registry
+		
+		
+		CI :
+		
+		GitHub Repo.								Artifactory Libraries				DockerHub
+													(Jfrog)
+													
+			Source_Code:							Application Artifact				Application Image
+			
+			web_app.java_v1.0		--> Build --> 	web_app.war_v1.0			-->		web_app_Image:v1.0
+		
+			web_app.java_v1.1		--> Build --> 	web_app.war_v1.1			-->		web_app_Image:v1.1		
+				
+				
+	
+	Working with Containers :::
+	
+	
+	- Infra-Structure Perspective	:::
+		
+			Jenkins_Master (VM)			==> To Create Jenkins CI/CD Pipeline Projects and schedule to the builds in the slave_nodes
+																	
+				Jenkins_SlaveNode1 (VM)	==> Perform Application Builds - Java Applications 
+				Jenkins_SlaveNode2 (VM)	==> Perform Application Builds - .Net Applications			
+				Jenkins_SlaveNode3 (VM)	==> Perform Application Builds - Python Applications 
+				Jenkins_SlaveNode4 (VM)	==> Perform Application Builds - Angular/NodeJS
+				Jenkins_SlaveNode5 (VM)	==> Perform Application Builds - Ruby 	
+
+
+			Using Containers :::
+		
+			Jenkins_Master (VM)				==> To Create Jenkins CI/CD Pipeline Projects and schedule to the builds in the slave_nodes
+			
+				Jenkins_SlaveNode1 (VM) 	==> Install Container-Engine
+					C1 	- Java Applications 
+					C2	- .Net Applications	
+					C3  - Python Applications
+					C4  - Angular/NodeJS
+					C5  - Ruby 	
+				
+	
+	
+	- Developers/Deployment Perspective :::
+		
+		
+		Dev Environment :
+			
+			Developers :
+			
+				- Create Source Code 							mywebapp.java_V1.0 		jdk17
+				
+				- Application Build 				
+				
+				- Create Application Artifact					mywebapp.war_V1.0 
+				
+				- Perform Unit Testing - using Tomcat:8.5,jdk17 	
+
+
+			Using Containers :
+			
+				- Containerize the Application along with its depedencies.
+				
+					- Package the Application:
+					
+						- (mywebapp.war_V1.0,Tomcat:8.5,jdk17)		--> mywebapp_Image:V1.0	
+						
+						- Publish the Image to Container Registry(DockerHub)
+				
+				
+		QA Environment (VM):		Using Container Engine, Pull the Application Image from DockerHub
+		
+		
+				- mywebapp_Image:V1.0	
+				
+				- Run that application as a Container.
+		
+		
+		UAT Environment (VM):		Using Container Engine, Pull the Application Image from DockerHub
+		
+		
+				- mywebapp_Image:V1.0	
+				
+				- Run that application as a Container.
+				
+		PROD Environment (VM):		Using Container Engine, Pull the Application Image from DockerHub
+				
+				- mywebapp_Image:V1.0	
+				
+				- Run that application as a Container.
+		
+				
+
+	- Working with Containers:		
+		
+		- Create DockerHub Account
+			- Login & Explore DockerHub Dashboard.		
+		
+		- Install Docker Container-Engine on a VM(Use Jenkins_SlaveNode1)
+		
+		- sudo -i 
+		
+		- apt install docker.io -y
+		
+	- Working with Docker Cli Commands :
+	
+		- docker --version 
+		
+		- docker images 				# To get the list of Container Images in the Local Machine 
+		
+		- docker ps 					# To get the list Active/Running Containers in the Local Machine 
+		
+		- docker ps -a 					# To get the list of Active and Inactive Containers in Local Machine
+		
+		- docker pull 					# To download an Image from DockerHub Registry
+		
+		- docker run <Image_Name>		# Create and run the Container based on the Container Image.
+		
+			docker run ubuntu
+			
+		- Modes of Container Execution: 
+		
+			- Foreground/Attached Mode 		# Default 
+			
+					docker run ubuntu		# Hold the terminal during execution
+			
+Next :::			
+			- Background/Detached Mode :
+		
+		
+			- Interactive Mode :
+		
